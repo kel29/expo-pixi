@@ -17,15 +17,7 @@ export default class App extends Component {
   state = {
     image: null,
     strokeColor: Math.random() * 0xffffff,
-    strokeWidth: Math.random() * 30 + 10,
-    lines: [
-      {
-        points: [{ x: 300, y: 300 }, { x: 600, y: 300 }, { x: 450, y: 600 }, { x: 300, y: 300 }],
-        color: 0xff00ff,
-        alpha: 1,
-        width: 10,
-      },
-    ],
+    strokeWidth: 14,
     appState: AppState.currentState,
   };
 
@@ -52,7 +44,7 @@ export default class App extends Component {
 
     this.setState({
       image: { uri },
-      strokeWidth: Math.random() * 30 + 10,
+      strokeWidth: 14,
       strokeColor: Math.random() * 0xffffff,
     });
   };
